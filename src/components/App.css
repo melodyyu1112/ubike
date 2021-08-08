@@ -1,0 +1,11 @@
+.topSelect, .bottomSelect, .result {
+    margin-bottom: 1em;
+}
+
+.result {
+    text-align: center;
+}
+
+.sorry {
+    font-weight: bold;
+}

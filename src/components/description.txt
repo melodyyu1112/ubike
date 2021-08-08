@@ -1,0 +1,41 @@
+1) apiStationRequest: 
+     //use of Metro /v2/Rail/Metro/Station/{Operator}
+    request for blue line stations
+    parameter need: none
+    
+    return: 
+    var name = station.StationName.Zh_tw;
+    var position = station.StationPosition; (lat and lon) for api bike station request
+
+2) apiBikeStationRequest: 
+    request for every bike station that has '捷運' in the name //update: 捷運 
+
+    parameter need: none
+    return: 
+    AuthorityID: "TPE"
+    BikesCapacity: 31
+    ServiceType: 2
+    SrcUpdateTime: "2021-08-03T14:38:11+08:00"
+    StationAddress: {Zh_tw: "信義路五段128號東側", En: "No. 128, Sec. 5, Xinyi Rd. (East)"}
+    StationID: "500112010"
+    StationName: {Zh_tw: "YouBike2.0_捷運象山站(2號出口)", En: "YouBike2.0_MRT Xiangshan Sta. (Exit 2)"}
+    StationPosition: {PositionLon: 121.56974, PositionLat: 25.03222, GeoHash: "wsqqqkurk"}
+    StationUID: "TPE500112010"
+    UpdateTime: "2021-08-03T15:04:22+08:00"
+
+    
+
+3) bikeAvailability:
+    request bike rent/return availability for specific station 
+
+    parameter need: the stationID, serviceavailable === '1'
+
+    return: 
+    AvailableRentBikes
+    AvailableReturnBikes
+
+
+
+
+    
+
